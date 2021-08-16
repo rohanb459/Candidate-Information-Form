@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Basic Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1 id="title">Give Information</h1>
+    <p id="description">Candidate Basic Information Form</p>
+    </header>
+
+    <div class="form"> 
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Your Name</label>
+                <input type="text" name="name" id="name" class="form-input" placeholder="Your Name" required>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="email" id="email-label">Your E-mail Address</label>
+                <input type="email" name="email" id="email" class="form-input" placeholder="Your E-mail Address" required>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="number" id="number-label">Your Age</label>
+                <input type="number" min="18" max="70" class="form-input" placeholder="Your Age">
+            </div>
+            <hr>
+            <div class="form-group">
+               <p>Gender</p>
+                <input type="radio" value="male" class="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" value="female" class="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" name="gender" class="radio" id="Others" value="others">
+                <label for="others">Others</label>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="">Position you are applying for</label>
+                <select name="position" id="dropdown" required class="form-input">
+                    <option value="" disabled selected>Desired Position</option>
+                    <option value="web">Web Developer</option>
+                    <option value="java">Java Developer</option>
+                    <option value="cpp">C++ Developer</option>
+                    <option value="AI/ML">AI and ML Engineer</option>
+                    <option value="devops">Devops Engineer</option>
+                    <option value="system">System Engineer</option>
+                    <option value="testing">Application Tester</option>
+                </select>
+            
+            </div>
+            <hr>
+            <div class="form-group">
+                <p>Your Skills</p>
+                <input type="checkbox" name="skills"  class="check" id="cpp" value="cpp">
+                <label for="cpp">C++</label>
+                <br>
+                <input type="checkbox" name="skills" class="check"  id="java" value="java">
+                <label for="Java">Java</label>
+                <br>
+                <input type="checkbox" name="skills" class="check"  id="python" value="python">
+                <label for="python">Python</label>
+                <br>
+                <input type="checkbox" name="skills" class="check" id="AI/ML" value="AI/ML">
+                <label for="AI/ML">AI and ML</label>
+                <br>
+                <input type="checkbox" name="skills" class="check" id="web" value="web">
+                <label for="web">Full Stack Web Development</label>
+                <br>
+                <input type="checkbox" name="skills" class="check" id="devops" value="devops">
+                <label for="devops">Devops</label>
+            </div>
+            <hr>
+            <div class="form-group">
+                <p>Tell about Yourself</p>
+                <textarea name="about" id="about" cols="30" rows="10" placeholder="Type here" class="form-input"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

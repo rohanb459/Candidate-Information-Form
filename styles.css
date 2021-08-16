@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+body{
+font-family: 'Uchen', serif;
+color:whitesmoke;
+background-image: url(https://www.cnet.com/a/img/NmTo06FvEM6ZR9ld7a3_wlBKz7Y=/1200x675/2019/02/04/8311b046-6f2b-4b98-8036-e765f572efad/msft-microsoft-logo-2-3.jpg);
+max-width: 100%;
+height: auto;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+image-orientation: inherit;
+
+}
+.form{
+    background-color: rgb(6, 2, 12);
+    opacity: 0.85;
+    color: whitesmoke;
+    margin-left:20%;
+    margin-right: 20%;
+    padding: 5%;
+}
+#title{
+    text-decoration: underline;
+}
+#description{
+    font-size: 1.5rem;
+}
+header{
+    text-align: center;
+    line-height: 12px;
+}
+header p,h1{
+    line-height: 1.2;
+}
+.form-input{
+    display: block;
+    width: 100%;
+    height: 5vh;
+    padding-left: 1%;
+}
+label,p,input{
+    font-size: 1.5rem;
+}
+.form-input:focus{
+    border-color:rgb(11, 159, 245);
+    outline: none;
+    border-width: 00.25rem;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-radius: 0.25rem;
+}
+.check{
+    margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.check:focus{
+    border-color:rgb(11, 159, 245);
+    outline: none;
+    border-width: 00.25rem;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-radius: 0.25rem;
+    
+}
+.radio{
+    display: inline-block;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}
+.form-group{
+    margin: 2%;
+}
+button{
+    padding-top: 10px;
+    display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: gray;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.25rem;
+ } 
+    
+@media (max-width:472px) {
+    
+    .form{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (min-width:546px) {
+    .form{
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    
+}
+@media (min-width:1024px) {
+    .form{
+        margin-left:20%;
+        margin-right:20%;
+    }
+    
+}
